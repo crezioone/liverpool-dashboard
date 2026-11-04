@@ -33,7 +33,7 @@ const players = [
     { name: "Alisson Becker", position: "Torwart", number: 1, photo: "ali.webp", goals: 0, assists: 0, minutesPlayed: 810 },
     { name: "Dominik Szoboszlai", position: "Mittelfeldspieler", number: 8, photo: "szobo.webp", goals: 2, assists: 5, minutesPlayed: 900 },
     { name: "Florian Wirtz", position: "Mittelfeldspieler", number: 7, photo: "wirtz.webp", goals: 4, assists: 6, minutesPlayed: 920 },
-    { name: "Alexcander isak", position: "Angriff", number: 9, photo: "isak.webp", goals: 6, assists: 2, minutesPlayed: 900 },
+    { name: "Alexander Isak", position: "Angriff", number: 9, photo: "isak.webp", goals: 6, assists: 2, minutesPlayed: 900 },
     { name: "Bradley Barcola", position: "Angriff", number: 29, photo: "barcola.webp", goals: 3, assists: 2, minutesPlayed: 700 },
     { name: "Ronald Araujo", position: "Abwehrspieler", number: 33, photo: "ara1.webp", goals: 1, assists: 0, minutesPlayed: 850 },
     { name: "Giorgi Mamardashvili", position: "Torwart", number: 25, photo: "mamar.webp", goals: 0, assists: 0, minutesPlayed: 270 },
