@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Liverpool FC</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/png" href="logo.png">
+</head>
+<body>
+
+    <header>
+    <div class="header-content">
+        <h1 class="logo">
+            <img src="logo.png" alt="Liverpool Logo" class="logo-img"> Liverpool FC
+        </h1>
+        <!-- Иконка гамбургера справа -->
+        <div class="menu-toggle" id="menuToggle">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+    </div>
+
+    <!-- Выезжающее меню -->
+    <nav class="side-menu" id="sideMenu">
+        <button class="close-btn" id="closeBtn">&times;</button>
+        <ul>
+            <li><a href="#match">Nächstes Spiel</a></li>
+            <li><a href="#schedule">Kalender</a></li>
+            <li><a href="#squad">Kader</a></li>
+            <li><a href="#top-stats-section">Top-Statistiken</a></li>
+        </ul>
+    </nav>
+</header>
+
+    <main class="container">
+        <!-- Nächstes Spiel Section -->
+        <section id="match" class="match-section">
+            <h2>Nächstes Spiel</h2>
+            <div class="match-card">
+    <div class="teams">
+        <div class="team">
+            <img src="logo.png" alt="Liverpool" class="match-logo">
+            <span>Liverpool FC</span>
+        </div>
+        <span class="vs">VS</span>
+        <div class="team">
+            <img src="Fenerbahçe.svg.webp" alt="Fenerbahce" class="match-logo">
+            <span>Fenerbahce</span>
+        </div>
+    </div>
+    <div class="countdown" id="countdown">
+        Countdown wird geladen...
+    </div>
+</div>
+        </section>
+
+         <!-- Секция: Расписание на ноябрь -->
+        <section id="schedule" class="schedule-section">
+            <h2>Spielplan – November 2026</h2>
+            <div class="schedule-card">
+                <div class="schedule-list" id="scheduleContainer">
+                    <!-- Список матчей будет сгенерирован через JS -->
+                </div>
+            </div>
+        </section>
+
+        <!-- Kader & Suche Section -->
+        <section id="squad" class="squad-section">
+            <h2>Spielerkader</h2>
+            <input type="text" id="searchInput" placeholder="Spieler nach Namen suchen...">
+            
+            <div class="players-grid" id="playersContainer">
+                <!-- Spieler-Karten werden über JS hinzugefügt -->
+            </div>
+        </section>
+
+        <section id="top-stats-section" class="top-stats-section">
+    <h2 class="Spielerkader-title">Top-Statistiken</h2>
+    <div class="stats-grid">
+        
+        <!-- 1. Бомбардиры -->
+        <div class="stat-widget">
+            <div class="widget-header">
+                <h3>Torschützen</h3>
+                <span>›</span>
+            </div>
+            <div id="top-goals-list" class="widget-list"></div>
+        </div>
+
+        <!-- 2. Голевые пасы -->
+        <div class="stat-widget">
+            <div class="widget-header">
+                <h3>Vorlagen</h3>
+                <span>›</span>
+            </div>
+            <div id="top-assists-list" class="widget-list"></div>
+        </div>
+
+        <!-- 3. Гол + Пас -->
+        <div class="stat-widget">
+            <div class="widget-header">
+                <h3>Scorerpunkte</h3>
+                <span>›</span>
+            </div>
+            <div id="top-points-list" class="widget-list"></div>
+        </div>
+
+        <!-- 4. Минут на поле -->
+        <div class="stat-widget">
+            <div class="widget-header">
+                <h3>Spielminuten</h3>
+                <span>›</span>
+            </div>
+            <div id="top-minutes-list" class="widget-list"></div>
+        </div>
+
+    </div>
+</section>
+
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
