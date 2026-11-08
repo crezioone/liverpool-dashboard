@@ -1,6 +1,6 @@
 // --- 1. COUNTDOWN TIMER (До реального матча: 4 ноября 2026 в 18:45) ---
 // Создаем точную дату матча в формате JavaScript (Год, Месяц с 0 (ноябрь = 10), День, Часы, Минуты)
-const matchDate = new Date(2026, 10, 4, 18, 45, 0).getTime(); 
+const matchDate = new Date("2026-11-22T18:30:00").getTime(); 
 
 function updateCountdown() {
     const now = new Date().getTime();
@@ -19,7 +19,7 @@ function updateCountdown() {
     const seconds = Math.floor((distance % (1000 * 60)) / 1000);
 
     // Выводим таймер и сразу пишем дату матча для наглядности
-    countdownElement.innerHTML = `Anpfiff (04.11.2026, 18:45): ${days}d ${hours}h ${minutes}m ${seconds}s`;
+    countdownElement.innerHTML = `Anpfiff (22.11.2026, 18:30): ${days}d ${hours}h ${minutes}m ${seconds}s`;
 }
 
 setInterval(updateCountdown, 1000);
@@ -92,8 +92,8 @@ searchInput.addEventListener("input", (e) => {
 
 // --- 3. РАСПИСАНИЕ МАТЧЕЙ НА НОЯБРЬ ---
 const novemberMatches = [
-    { date: "Mi., 4. Nov", home: "Fenerbahçe", away: "Liverpool FC", time: "18:45", league: "Champions League", logo: "cl-logo.png" },
-    { date: "So., 8. Nov", home: "Crystal Palace", away: "Liverpool FC", time: "16:00", league: "Premier League", logo: "pl-logo.png" },
+    { date: "Mi., 4. Nov", home: "Fenerbahçe", away: "Liverpool FC", time: "3:2", league: "Champions League", logo: "cl-logo.png" },
+    { date: "So., 8. Nov", home: "Crystal Palace", away: "Liverpool FC", time: "1:3", league: "Premier League", logo: "pl-logo.png" },
     { date: "So., 22. Nov", home: "Liverpool FC", away: "Man United", time: "18:30", league: "Premier League", logo: "pl-logo.png" },
     { date: "Mi., 25. Nov", home: "Club Brugge", away: "Liverpool FC", time: "21:00", league: "Champions League", logo: "cl-logo.png" },
     { date: "So., 29. Nov", home: "Everton", away: "Liverpool FC", time: "14:00", league: "Premier League", logo: "pl-logo.png" }
